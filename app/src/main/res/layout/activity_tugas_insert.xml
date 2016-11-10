@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e74c3c"
+
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c0392b"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar" />
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/seamolec"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_above="@id/btnUbahTampan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentBottom="true"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/square"/>
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tugas"
+                            android:hint="activity name"
+                            android:letterSpacing="0.0025"
+                            android:inputType="text"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/pencil"/>
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:id="@+id/deskripsi"
+                            android:hint="description"
+                            android:layout_height="180dp"
+                            android:ems="10"
+                            android:letterSpacing="0.0025"
+                            android:inputType="text|textMultiLine"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Start Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SELECT TIME"
+                                android:id="@+id/btn_time"
+                                android:layout_below="@+id/btn_date"
+                                android:layout_alignLeft="@+id/btn_date"
+                                android:layout_alignStart="@+id/btn_date" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round"
+                                android:layout_alignBottom="@+id/btn_time"
+                                android:layout_toLeftOf="@+id/btn_time"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/linearLayout">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="15dp"
+                                    android:src="@drawable/clock"/>
+                            <EditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.0025"
+                                android:inputType="text"
+                                android:background="#00000000"
+                                android:textSize="16dp"
+                                android:padding="15dp"
+
+                                android:id="@+id/in_time"
+                                android:textColor="#7000"
+                                android:textColorHint="#7000"
+                                android:hint="time"
+                                 />
+                            </LinearLayout>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SELECT DATE"
+                                android:id="@+id/btn_date"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/linearLayout">
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="15dp"
+                                    android:src="@drawable/calender"/>
+                            <EditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.0025"
+                                android:inputType="text"
+                                android:background="#00000000"
+                                android:textSize="16dp"
+                                android:padding="15dp"
+
+                                android:id="@+id/in_date"
+                                android:textColor="#7000"
+                                android:textColorHint="#7000"
+
+                                android:hint="date"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:text="End Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+
+                        android:id="@+id/textView2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.95">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_toLeftOf="@+id/btn_dateDua"
+                                android:layout_toStartOf="@+id/btn_dateDua"
+                                >
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/calender"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.0025"
+                                android:inputType="text"
+                                android:background="#00000000"
+                                android:textSize="16dp"
+                                android:padding="15dp"
+
+                                android:id="@+id/in_dateDua"
+                                android:textColor="#7000"
+                                android:textColorHint="#7000"
+
+
+                                android:hint="date"
+                                 />
+                                </LinearLayout>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SELECT TIME"
+                                android:id="@+id/btn_timeDua"
+                                android:layout_below="@+id/btn_dateDua"
+                                android:layout_alignLeft="@+id/btn_dateDua"
+                                android:layout_alignStart="@+id/btn_dateDua"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SELECT DATE"
+                                android:id="@+id/btn_dateDua"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round"
+                                android:layout_alignBottom="@+id/btn_timeDua"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/clock"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.0025"
+                                android:inputType="text"
+                                android:background="#00000000"
+                                android:textSize="16dp"
+                                android:padding="15dp"
+
+                                android:id="@+id/in_timeDua"
+                                android:textColor="#7000"
+                                android:textColorHint="#7000"
+                                android:hint="time"
+
+                                 />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_marginTop="10dp"
+
+                        android:id="@+id/btnUbahTampan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add Task"
+                        android:letterSpacing="0.0025"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:background="#c0392b"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.95" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

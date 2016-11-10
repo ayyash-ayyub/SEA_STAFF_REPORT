@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bground" >
+
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/seamolec"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Now"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="#007AFF"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:layout_above="@id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_web"/>
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email-id "
+                    android:letterSpacing="0.0025"
+                    android:inputType="text"
+                    android:textColor="#7000"
+                    android:textColorHint="#7000"
+                    android:background="#00000000"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_lock"/>
+
+                <EditText
+
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.0025"
+                    android:textColorHint="#7000"
+                    android:textSize="16dp"
+                    android:textColor="#7000"
+                    android:background="#00000000"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEA STAFF ABSENSI"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bground" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Tugas"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="#007AFF"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/btn_listtugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Tugas"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="#007AFF"
+            android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="100dp"
+            android:layout_above="@+id/btnInsert">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_above="@id/btnInsert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentBottom="true"
+
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tugas"
+                            android:letterSpacing="0.0025"
+                            android:inputType="text"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp"
+                            android:id="@+id/tugas" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/deksripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:hint="Deskripsi"
+                            android:inputType="text|textMultiLine"
+                            android:gravity="top"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/etxt_fromdate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:hint="Tanggal Mulai"
+                            android:gravity="top"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/etxt_todate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:hint="Tanggal Berakhir"
+                            android:gravity="top"
+                            android:textColor="#7000"
+                            android:textColorHint="#7000"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:padding="15dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
